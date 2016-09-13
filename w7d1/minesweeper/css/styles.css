@@ -1,0 +1,19 @@
+.board{
+  margin:auto;
+  width:400px;
+  position:relative;
+  height:400px;
+}
+
+.tile{
+  float:left;
+  width:40px;
+  height:40px;
+  border: 1px gray solid;
+}
+
+ul{
+  margin: auto;
+  list-style:none;
+  padding: 0;
+}

@@ -1,0 +1,5 @@
+<%= current_user.username + "'s profile" %>
+<%= link_to "New Goal!", new_goal_url %>
+
+<%= render "comments/comment", comments: @user.comments %>
+<%= render "comments/form", commentable: @user %>

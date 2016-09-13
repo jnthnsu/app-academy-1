@@ -1,0 +1,4 @@
+<li><%= link_to comment.content[0..19], comment_url(comment) %></li>
+  <% comment.child_comments.includes(:child_comments).each do |child| %>
+     <li><%= render 'form', comment: child%></li>
+  <% end %>

@@ -1,0 +1,8 @@
+<% if current_user %>
+  <%= current_user.name %>
+  <%= button_to "logout", session_url, method: :delete %>
+<% else %>
+  <%= current_user %>
+  <%= button_to "login", new_session_url, method: :get %>
+  <%= button_to "signup", new_user_url, method: :get %>
+<% end %>

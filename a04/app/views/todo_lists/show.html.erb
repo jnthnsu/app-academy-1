@@ -1,0 +1,12 @@
+<%= @todo_list.name %>
+<%= @todo_list.description %>
+
+<ul>
+  <% @todo_list.items.each do |item| %>
+  <li><%= item.body %></li>
+  <%= button_to "Remove Todo Item", todo_item_url(item), method: :delete %>
+  <% end %>
+</ul>
+
+<%= link_to "Add Todo Item", new_todo_item_url(todo_list: @todo_list), method: :get %>
+<%= link_to "Edit Todo List", edit_todo_list_url, method: :get %>

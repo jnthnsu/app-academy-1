@@ -1,0 +1,8 @@
+<%= render 'shared/errors' %>
+
+<form class="" action= <%= users_url %> method="post">
+  <%= auth_token %>
+  email:<input type="text" name="user[email]" value="">
+  password:<input type="text" name="user[password]" value="">
+  <input type="submit" value="sign up.">
+</form>

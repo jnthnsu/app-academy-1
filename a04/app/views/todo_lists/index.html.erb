@@ -1,0 +1,6 @@
+<%= current_user.nickname %>
+<ul>
+  <% current_user.todo_lists.each do |list| %>
+  <li> <%= link_to list.name, todo_list_url(list) %> %></li>
+  <% end %>
+</ul>

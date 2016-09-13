@@ -1,0 +1,37 @@
+figure{
+
+}
+
+ul{
+  list-style:none;
+  padding:0;
+  border-bottom: 10px black solid;
+  margin: auto;
+  height: 500px;
+  float:left;
+  width: 300px;
+  position: relative;
+}
+
+li{
+  background-color: green;
+  height: 40px;
+  border-radius: 30px;
+  margin: 5px auto;
+  /*position: absolute;*/
+  vertical-align: bottom;
+}
+
+group:after{
+  display:block;
+  content:'';
+  clear:both;
+}
+
+ul:hover{
+  border-bottom: blue 10px solid;
+}
+
+ul:selected{
+  border-bottom: red 10px solid;
+}

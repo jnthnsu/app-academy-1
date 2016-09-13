@@ -1,0 +1,30 @@
+h1{
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+ul{
+  list-style: none;
+  border: 10px black solid;
+  margin: auto;
+  padding: 0;
+}
+
+li{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  float: left;
+}
+
+
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}

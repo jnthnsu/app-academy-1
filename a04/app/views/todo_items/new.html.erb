@@ -1,0 +1,6 @@
+<form class="" action= <%= todo_items_url %> method="post">
+  <input type='hidden' name= 'authenticity_token' value= <%= form_authenticity_token %>>
+  <label>Todo<input type="text" name="todo_item[body]" value=''></label>
+  <input type='hidden' name= 'todo_item[todo_list_id]' value= <%= @todo_list.id %>>
+  <input type="submit" value="Create New Todo Item">
+</form>

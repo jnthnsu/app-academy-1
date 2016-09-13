@@ -1,0 +1,14 @@
+<% if !@goal.private || current_user.id == @goal.user_id %>
+<ul>
+  <% @goal.attributes.select{|k, _| [:title, :details, :private, :complete].map(&:to_s).include?(k)}.each do |a, v| %>
+ <li><%= a %> : <%= v %></li>
+  <% end %>
+</ul>
+Cheers!: <%= @goal.cheers %>
+<%= button_to "Change completion status.", change_complete_goal_url(@goal), method: :get %>
+<% end %>
+
+<%= render "comments/comment", comments: @goal.comments %>
+<%= render "comments/form", commentable: @goal %>
+
+<%= button_to "cheer!", cheer_goal_url(@goal), method: :get %>

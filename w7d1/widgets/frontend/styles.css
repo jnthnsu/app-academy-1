@@ -1,0 +1,12 @@
+.selected {
+  color: green;
+  font-size: 48px;
+}
+
+.unselected {
+  color: red;
+}
+
+.hidden{
+  display: none;
+}

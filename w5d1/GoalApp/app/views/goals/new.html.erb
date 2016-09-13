@@ -1,0 +1,25 @@
+<form action="/goals" method="post">
+  <%= auth_token %>
+  <label for=""> title
+    <input type="text" name="goal[title]" value="">
+  </label>
+  <label for=""> details
+    <input type="text" name="goal[details]" value="">
+  </label>
+  <h4>Privacy</h4>
+  <label for="">private
+    <input type="radio" name="goal[private]" value="true">
+  </label>
+  <label for="">not private
+    <input type="radio" name="goal[private]" value="false">
+  </label>
+  <h4>Complete?</h4>
+  <label for="">complete
+    <input type="radio" name="goal[complete]" value="true">
+  </label>
+  <label for="">not complete
+    <input type="radio" name="goal[complete]" value="false">
+  </label>
+
+  <input type="submit" value="Create Goal">
+</form>
